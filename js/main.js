@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded", function() {
         "You will have a lucky day!",
         "An exciting opportunity is coming your way.",
         "A surprise gift is in your future.",
-        "You will make a new friend soon!",
         "Something unexpected will bring you joy.",
         "Your dreams are closer than you think.",
         "You will receive good news very soon!",
@@ -14,6 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
         "You have a secret admirer.",
         "The love of your life is right in front of your eyes.",
         "Do what you love. The rest will fall into place.",
+
     ];
 
     let stage = document.querySelector("#fortune-teller");
