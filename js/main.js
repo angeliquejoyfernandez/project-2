@@ -14,7 +14,6 @@ document.addEventListener("DOMContentLoaded", function() {
         // "The love of your life is right in front of your eyes.",
         // "Do what you love. The rest will fall into place.",
         "angie is your girlfriend",
-        
 
     ];
 
