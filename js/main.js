@@ -21,7 +21,6 @@ document.addEventListener("DOMContentLoaded", function() {
     let fortuneDisplay = document.querySelector("#fortune-display");
     let fortuneText = document.querySelector("#fortune-text");
 
-    // Number selection event listeners
     document.querySelectorAll(".number").forEach(function(button) {
         button.addEventListener("click", function() {
             console.log("Number selected: ", button.dataset.value);
@@ -30,12 +29,12 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 
-    // Color selection event listeners
+    // Color selection 
     document.querySelectorAll(".color").forEach(function(button) {
         button.addEventListener("click", function() {
             console.log("Color selected: ", button.dataset.color);
             
-            // Hide all color buttons
+            
             document.querySelectorAll(".color").forEach(colorButton => {
                 colorButton.style.visibility = "hidden";
             });
