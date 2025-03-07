@@ -1,0 +1,116 @@
+/*
+CSS RESETS:
+ Border box reset:
+https://www.paulirish.com/2012/box-sizing-border-box-ftw/
+ 62.5% Fix: https://www.aleksandrhovhannisyan.com/blog/62-5-percent-font-size-trick/
+*/
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+ }
+ 
+ *,
+ *:before,
+ *:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+ }
+ 
+ html,
+ body {
+    height: 100%;
+ }
+ 
+ body {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    background-color: #ffbace;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+ 
+header {
+    padding: 20px;
+    background-color: cyan;
+    text-align: center;
+}
+
+main {
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+.image-div {
+    display: inline-block;
+}
+
+#fortune-teller, #color-stage {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#fortune-teller button, .color {
+    font-size: 3rem;
+    padding: 20px;
+    cursor: pointer;
+    border: none;
+    background-color: white;
+    border-radius: 10px;
+    transition: transform 0.2s;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#fortune-teller button:nth-child(1), .color:nth-child(1) {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#fortune-teller button:nth-child(2), .color:nth-child(2) {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#fortune-teller button:nth-child(3), .color:nth-child(3) {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#fortune-teller button:nth-child(4), .color:nth-child(4) {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#fortune-teller button:hover, .color:hover {
+    transform: scale(1.1);
+}
+
+.hidden {
+    display: none;
+}
+
+#fortune-display {
+    margin-top: 100px;
+}
+
+#fortune-text {
+    font-size: 5rem;
+}
+cxc
+#fortune-gif {
+    width: auto;
+    height: auto;
+    margin-top: 20px;
+}
